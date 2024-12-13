@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <form id="contactForm">
+            <h1>Fale conosco</h1>
+            <div class="row-group">
+                <div class="form-group">
+                    <label for="firstName">Nome</label>
+                    <input required type="text" id="firstName" name="firstName">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Sobrenome</label>
+                    <input required type="text" id="lastName" name="lastName">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input required type="email" id="email" name="email">
+            </div>
+            <div class="radio-group">
+                <label>Tipo de consulta</label>
+                <div class="radio-group">
+                    <label><input checked type="radio" name="queryType" value="general"> Geral</label>
+                    <label><input type="radio" name="queryType" value="support"> Suporte</label>
+                </div>
+            </div>  
+            <div class="form-group">
+                <label for="textarea">Mensagem</label>
+                <textarea required id="textarea" name="textarea" rows="4" placeholder="Escreva sua mensagem"></textarea>
+            </div>
+            <div class="form-group">
+                <label><input required type="checkbox" id="consent" name="consent"> Eu concordo em ser contatado pelo time</label>
+            </div>  
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="toast" class="toast">Formulário enviado com sucesso!</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
