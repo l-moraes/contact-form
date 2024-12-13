@@ -7,6 +7,7 @@
     --dark-text-color: #242424;
     --white-text-color: white;
     --toast-background: #7ae07d;
+    --toast-error-background-color: #f44336;
 }
 
 body {
@@ -118,6 +119,10 @@ button:hover {
     transform: translateX(-50%);
     font-size: 1rem; 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.toast.error-toast {
+    background-color: var(--toast-error-background-color);
 }
 
 .toast.show {
